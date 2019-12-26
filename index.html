@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music App</title>
+    <link rel="stylesheet" href="build/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/inter-ui@3.11.0/inter.min.css">
+</head>
+
+<body class="font-sans text-gray-900 bg-white">
+    <div class="flex" id="app">
+        <nav class="w-64 p-6 text-gray-800 bg-gray-100">
+            <ul>
+                <li class="flex items-center py-3 text-sm">
+                    <svg class="w-5 h-5 text-gray-500 fill-current" viewBox="0 0 24 24">
+                        <path class="heroicon-ui" d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9.56 8.93l6.37-2.12a1 1 0 0 1 1.26 1.26l-2.12 6.37a1 1 0 0 1-.63.63l-6.37 2.12a1 1 0 0 1-1.26-1.26l2.12-6.37a1 1 0 0 1 .63-.63zm-.22 5.73l4-1.33 1.32-4-4 1.34-1.32 4z" />
+                    </svg>
+                    <a class="ml-2 font-semibold" href="#">Browse</a>
+                </li>
+                <li class="flex items-center py-3 text-sm">
+                    <svg class="w-5 h-5 text-gray-500 fill-current" viewBox="0 0 24 24">
+                        <path class="heroicon-ui" d="M13 18.94V21h3a1 1 0 0 1 0 2H8a1 1 0 0 1 0-2h3v-2.06A8 8 0 0 1 4 11a1 1 0 0 1 2 0 6 6 0 1 0 12 0 1 1 0 0 1 2 0 8 8 0 0 1-7 7.94zM12 1a4 4 0 0 1 4 4v6a4 4 0 1 1-8 0V5a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v6a2 2 0 1 0 4 0V5a2 2 0 0 0-2-2z" />
+                    </svg>
+                    <a class="ml-2 font-semibold" href="#">Podcasts</a>
+                </li>
+                <li class="flex items-center py-3 text-sm">
+                    <svg class="w-5 h-5 text-gray-500 fill-current" viewBox="0 0 24 24">
+                        <path class="heroicon-ui" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2zm16 8.59V6H4v6.59l4.3-4.3a1 1 0 0 1 1.4 0l5.3 5.3 2.3-2.3a1 1 0 0 1 1.4 0l1.3 1.3zm0 2.82l-2-2-2.3 2.3a1 1 0 0 1-1.4 0L9 10.4l-5 5V18h16v-2.59zM15 10a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                    </svg>
+                    <a class="ml-2 font-semibold" href="#">Albums</a>
+                </li>
+                <li class="flex items-center py-3 text-sm">
+                    <svg class="w-5 h-5 text-gray-500 fill-current" viewBox="0 0 24 24">
+                        <path class="heroicon-ui" d="M12 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9 11a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2z" />
+                    </svg>
+                    <a class="ml-2 font-semibold" href="#">Artists</a>
+                </li>
+                <li class="flex items-center py-3 text-sm">
+                    <svg class="w-5 h-5 text-gray-500 fill-current" viewBox="0 0 24 24">
+                        <path class="heroicon-ui" d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2zm14 12v-2h-2v2h2zm0 2h-2v2h2v-2zM5 15h2v-2H5v2zm0 2v2h2v-2H5zm14-8h-2v2h2V9zm0-2V5h-2v2h2zM5 9v2h2V9H5zm0-2h2V5H5v2zm4 4h6V5H9v6zm0 2v6h6v-6H9z" />
+                    </svg>
+                    <a class="ml-2 font-semibold" href="#">Videos</a>
+                </li>
+            </ul>
+
+            <div class="mt-5 text-sm font-semibold text-gray-500 uppercase">My Music</div>
+            <ul>
+                <li class="flex items-center py-3 text-sm">
+                    <svg class="w-5 h-5 text-gray-500 fill-current" viewBox="0 0 24 24">
+                        <path class="heroicon-ui" d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm1-8.41l2.54 2.53a1 1 0 0 1-1.42 1.42L11.3 12.7A1 1 0 0 1 11 12V8a1 1 0 0 1 2 0v3.59z" />
+                    </svg>
+                    <a class="ml-2 font-semibold" href="#">Recenly played</a>
+                </li>
+                <li class="flex items-center py-3 text-sm">
+                    <svg class="w-5 h-5 text-gray-500 fill-current" viewBox="0 0 24 24">
+                        <path class="heroicon-ui" d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z" />
+                    </svg>
+                    <a class="ml-2 font-semibold" href="#">Favorite Songs</a>
+                </li>
+                <li class="flex items-center py-3 text-sm">
+                    <svg class="w-5 h-5 text-gray-500 fill-current" viewBox="0 0 24 24">
+                        <path class="heroicon-ui" d="M6 2h9a1 1 0 0 1 .7.3l4 4a1 1 0 0 1 .3.7v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2zm9 2.41V7h2.59L15 4.41zM18 9h-3a2 2 0 0 1-2-2V4H6v16h12V9z" />
+                    </svg>
+                    <a class="ml-2 font-semibold" href="#">Local Files</a>
+                </li>
+            </ul>
+            <div class="flex justify-between mt-5 text-sm font-semibold text-gray-500 uppercase">
+                <span class="flex">Playlists</span>
+                <svg class="w-5 h-5 text-gray-500 fill-current" viewBox="0 0 24 24">
+                    <path class="heroicon-ui" d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm1-9h2a1 1 0 0 1 0 2h-2v2a1 1 0 0 1-2 0v-2H9a1 1 0 0 1 0-2h2V9a1 1 0 0 1 2 0v2z" />
+                </svg>
+            </div>
+            <ul>
+                <li class="flex items-center py-3 text-sm">
+                    <a class="ml-2 font-semibold" href="#">My Daily Mix</a>
+                </li>
+                <li class="flex items-center py-3 text-sm">
+                    <a class="ml-2 font-semibold" href="#">Beshi Shundor</a>
+                </li>
+                <li class="flex items-center py-3 text-sm">
+                    <a class="ml-2 font-semibold" href="#">Maje Maje Huni</a>
+                </li>
+                <li class="flex items-center py-3 text-sm">
+                    <a class="ml-2 font-semibold" href="#">Maje Maje Huni 2</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="w-full">
+            <header class="flex justify-between px-6 py-4">
+                <div class="max-w-6xl">
+                    <div class="flex flex-row-reverse items-center">
+                        <input class="py-1 pl-10 pr-4 -ml-8 text-sm leading-loose bg-gray-100 border border-gray-400 rounded-full outline-none focus:bg-white" type="text" placeholder="Search for music, videos, etc...">
+                        <svg class="w-5 h-5 ml-3 text-gray-500 fill-current" viewBox="0 0 24 24">
+                            <path class="heroicon-ui" d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <a href="#">
+                        <img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=60" alt="Aavatar">
+                    </a>
+                    <button class="flex flex-col ml-3 text-sm leading-tight">
+                        <span class="font-bold">Wahab</span>
+                        <span class="flex items-center">
+                            Wahab12@gmail.com
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path class="heroicon-ui" d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z" />
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="flex p-1 ml-5">
+                        <svg class="w-6 h-6 mt-1 text-gray-600 fill-current" viewBox="0 0 24 24">
+                            <path class="heroicon-ui" d="M15 19a3 3 0 0 1-6 0H4a1 1 0 0 1 0-2h1v-6a7 7 0 0 1 4.02-6.34 3 3 0 0 1 5.96 0A7 7 0 0 1 19 11v6h1a1 1 0 0 1 0 2h-5zm-4 0a1 1 0 0 0 2 0h-2zm0-12.9A5 5 0 0 0 7 11v6h10v-6a5 5 0 0 0-4-4.9V5a1 1 0 0 0-2 0v1.1z" />
+                        </svg>
+                        <span class="flex items-center justify-center w-4 h-4 -ml-3 text-xs leading-tight tracking-tight text-white bg-red-400 border border-white rounded-full">5</span>
+                    </button>
+                </div>
+            </header>
+            <div class="flex px-6 py-4">
+                <div class="relative w-3/5 overflow-hidden text-white rounded-xl">
+                    <div class="absolute inset-0 bg-blue-600 opacity-25 -z-20"></div>
+                    <img class="absolute object-cover w-full h-full -z-30" src="https://images.unsplash.com/photo-1563381013529-1c922c80ac8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80" alt="big image">
+                    <div class="p-6 pt-24 leading-none tracking-widest">
+                        <span class="font-light uppercase">Complementary</span>
+                        <h2 class="text-5xl font-bold">Colors <br> Hasley</h2>
+                    </div>
+                    <div class="flex items-center p-6">
+                        <div class="flex items-center px-6 py-3 text-xs bg-black rounded-full">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path class="heroicon-ui" d="M8 14.54V6a1 1 0 0 1 .76-.97l12-3A1 1 0 0 1 22 3v12a4 4 0 1 1-2-3.46V4.28l-10 2.5V18a4 4 0 1 1-2-3.46zM6 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm12-3a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                            </svg>
+                            <span class="ml-2 tracking-wide uppercase">Now Playing</span>
+                        </div>
+                        <div class="flex items-center justify-center p-3 rounded-full">
+                            <svg class="w-5 h-5 text-blue-500 fill-current" viewBox="0 0 24 24">
+                                <path class="heroicon-ui" d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Top chart</h3>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
