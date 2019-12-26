@@ -9,6 +9,9 @@ module.exports = {
       borderRadius : {
         'xl' : '.8rem',
       },
+      boxShadow : {
+        soft: '0 10px 25px -3px rgba(0, 0, 0, 0.05)',
+      },  
       zIndex : {
         '-10' : '-10',
         '-20' : '-20',
